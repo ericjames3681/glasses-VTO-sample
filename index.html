@@ -35,7 +35,7 @@
       // entry point:
       function main() {
         JEELIZVTOWIDGET.start({
-          sku: 'rayban_aviator_or_vertFlash',
+          sku: 'persol_PO0649_havana_brown',
           searchImageMask: 'https://appstatic.jeeliz.com/jeewidget/images/target.png',
           searchImageColor: 0xeeeeee,
           callbackReady: function(){
@@ -94,12 +94,7 @@
     <div class='content'>
 
 
-      <div class='header'>
-        <div class="headerTitle">
-          Jeeliz VTO Widget
-        </div>      
-      </div>
-
+   
 
       <!-- Please keep the same element IDs so that JEELIZVTOWIDGET can extract them from the DOM -->
 
@@ -116,7 +111,7 @@
          it should have CSS attribute position: absolute so that it can be resized without
          changing the total size of the placeholder
         -->
-        <canvas id='JeelizVTOWidgetCanvas'></canvas>
+        <canvas width="600" height="600" id='JeelizVTOWidgetCanvas'></canvas>
         
         <div class='JeelizVTOWidgetControls JeelizVTOWidgetControlsTop'>
           <!-- ADJUST BUTTON: -->
@@ -125,17 +120,14 @@
           </button>
 
           <!-- RESIZE WIDGET BUTTON: -->
-          <button id='buttonResizeCanvas' onclick='test_resizeCanvas();'>
-            <div class="buttonIcon"><i class="fas fa-sync-alt"></i></div>Resize widget
-          </button>
+      
         </div>
 
         <!-- CHANGE MODEL BUTTONS: -->
         <div class='JeelizVTOWidgetControls' id='JeelizVTOWidgetChangeModelContainer'>
-          <button onclick="JEELIZVTOWIDGET.load('rayban_aviator_or_vertFlash')">Model 1</button>
-          <button onclick="JEELIZVTOWIDGET.load('rayban_round_cuivre_pinkBrownDegrade')">Model 2</button>
-          <button onclick="JEELIZVTOWIDGET.load_modelStandalone('glasses3D/glasses1.json')">Model 3</button>
-          <button onclick="load_modelBySKU()">by SKU</button>
+          <button onclick="JEELIZVTOWIDGET.load('persol_PO0649_havana_brown')">Havana Brown</button>
+          <button onclick="JEELIZVTOWIDGET.load('persol_PO3105S_black_green')">Black Green</button>
+          <button onclick="JEELIZVTOWIDGET.load('persol_PO0714_havana_blue')">Havana Blue</button>
         </div>
 
         <!-- BEGIN ADJUST NOTICE -->
